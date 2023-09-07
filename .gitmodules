@@ -1,0 +1,3 @@
+[submodule "bot2"]
+	path = bot2
+	url = https://github.com/b-nimaev/burlive

@@ -1,0 +1,14 @@
+services:
+  web1:
+    restart: on-failure
+    build: ./bot2
+    hostname: web1
+    ports:
+      - '5000:5000'
+  nginx:
+    build: ./nginx
+    ports:
+    - '80:80'
+    - '443:443'
+    depends_on:
+    - web1
